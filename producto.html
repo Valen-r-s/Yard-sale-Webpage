@@ -47,14 +47,11 @@
         left: 16px;
         background: var(--white);
         border-radius: 50%;
-        width: 36px;
-        height: 36px;
-        font-weight: bold;
-        font-size: 20px;
+        width: 32px;
+        height: 32px;
         color: var(--very-light-pink);
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
       }
-      .cerrar {
+      .cerrar:hover {
         cursor: pointer;
       }
       .product-detail > img:nth-child(2) {
@@ -106,7 +103,9 @@
   </head>
   <body>
     <aside class="product-detail">
-      <div class="cerrar">X</div>
+      <div class="cerrar">
+        <img src="./icons/icon_close.png" alt="" />
+      </div>
       <img src="./img/a2.jpeg" alt="furniture" />
       <div class="product-info">
         <p>$ 100,00</p>
