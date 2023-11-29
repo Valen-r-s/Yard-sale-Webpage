@@ -8,15 +8,10 @@ This is the frontend development of the following figma designs:
 ## Table of contents
 
 - [Overview](#overview)
-  - [Links](#links)
   - [Built with](#built-with)
 - [Author](#author)
 
 ## Overview
-
-<!-- ### Links
-
-- Live Site URL: [Live Site URL]((https://frontend-mentor-lyart-seven.vercel.app/) -->
 
 ### Built with
 
