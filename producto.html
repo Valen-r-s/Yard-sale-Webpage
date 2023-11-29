@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./logos/favicon_yard_sale.svg"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Producto</title>
+    <style>
+      :root {
+        --white: #ffffff;
+        --black: #000000;
+        --very-light-pink: #c7c7c7;
+        --text-input-field: #f7f7f7;
+        --hospital-green: #acd9b2;
+        --sm: 14px;
+        --md: 16px;
+        --lg: 18px;
+      }
+      body {
+        margin: 0;
+        font-family: "Quicksand", sans-serif;
+      }
+
+      .product-detail {
+        width: 360px;
+        position: absolute;
+        right: 0;
+      }
+      .cerrar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 16px;
+        left: 16px;
+        background: var(--white);
+        border-radius: 50%;
+        width: 36px;
+        height: 36px;
+        font-weight: bold;
+        font-size: 20px;
+        color: var(--very-light-pink);
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      }
+      .cerrar {
+        cursor: pointer;
+      }
+      .product-detail > img:nth-child(2) {
+        width: 100%;
+        height: 360px;
+        object-fit: cover;
+        border-radius: 0 0 24px 24px;
+      }
+      .product-info {
+        margin: 12px 24px;
+      }
+      .product-info > p:nth-child(1) {
+        font-weight: bold;
+        font-size: var(--lg);
+        margin-bottom: 0;
+      }
+      .product-info > p:nth-child(2) {
+        margin-top: 4px;
+        font-size: var(--lg);
+        color: var(--very-light-pink);
+      }
+      .product-info > p:nth-child(3) {
+        font-size: var(--md);
+        color: var(--very-light-pink);
+      }
+      .primary-button {
+        margin-top: 32px;
+        background-color: var(--hospital-green);
+        border-radius: 8px;
+        border: none;
+        color: var(--white);
+        height: 50px;
+        width: 100%;
+        font-size: var(--md);
+        font-weight: bold;
+        cursor: pointer;
+      }
+      .add-to-cart-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      @media (max-width: 640px) {
+        .product-detail {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <aside class="product-detail">
+      <div class="cerrar">X</div>
+      <img src="./img/a2.jpeg" alt="furniture" />
+      <div class="product-info">
+        <p>$ 100,00</p>
+        <p>Furniture</p>
+        <p>
+          With this unique furniture your home will look like no other, giving a
+          fresh and stylish vibe.
+        </p>
+        <button class="primary-button add-to-cart-button">
+          <img src="./icons/bt_add_to_cart.svg" alt="add to cart" />Add to cart
+        </button>
+      </div>
+    </aside>
+  </body>
+</html>
